@@ -1,4 +1,3 @@
-// Tạo mảng các sinh viên
 const students = [
   { id: 1, name: "Nguyễn A" },
   { id: 2, name: "Trần B" },
