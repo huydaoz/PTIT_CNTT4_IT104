@@ -3,7 +3,7 @@ interface Student {
   age: number;
   email: string;
 }
-let students: Student = {
+let studentss: Student = {
   name: "huy",
   age: 18,
   email: "huy@gmail.com",
@@ -13,4 +13,4 @@ function printf(students: Student) {
     `Tên tôi là: ${students.name}, tôi ${students.age} tuổi và email của tôi là ${students.email}`
   );
 }
-printf(students);
+printf(studentss);

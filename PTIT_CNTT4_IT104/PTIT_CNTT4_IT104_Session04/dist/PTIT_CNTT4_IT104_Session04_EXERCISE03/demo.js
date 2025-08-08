@@ -1,4 +1,4 @@
-let students = {
+let studentss = {
     name: "huy",
     age: 18,
     email: "huy@gmail.com",
@@ -6,4 +6,4 @@ let students = {
 function printf(students) {
     console.log(`Tên tôi là: ${students.name}, tôi ${students.age} tuổi và email của tôi là ${students.email}`);
 }
-printf(students);
+printf(studentss);
