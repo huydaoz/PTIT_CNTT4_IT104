@@ -14,6 +14,7 @@ export default function ListProduct() {
       image: string;
     }[]
   >([]);
+
   const [search, setSearch] = useState("");
 
   const productData = [
