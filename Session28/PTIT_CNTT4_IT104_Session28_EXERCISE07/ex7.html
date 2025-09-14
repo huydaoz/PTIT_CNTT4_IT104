@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 4, 5];
+
+      const printCallback = (index, item, arr) => {
+        console.log(`Vị trí: ${index} | Phần tử: ${item} | Mảng:`, arr);
+      };
+
+      const myForEach = (arr, callback) => {
+        for (let i = 0; i < arr.length; i++) {
+          callback(i, arr[i], arr);
+        }
+      };
+
+      myForEach(numbers, printCallback);
+    </script>
+  </body>
+</html>

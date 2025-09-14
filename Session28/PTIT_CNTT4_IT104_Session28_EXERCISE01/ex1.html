@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculate(a, b, c) {
+        let sum = a + b;
+        c(sum);
+      }
+      function callbackCaculate(r) {
+        console.log(r);
+        document.write("gia tri cua phep toan: ", r);
+      }
+      let a = 5;
+      let b = 6;
+      calculate(a, b, callbackCaculate);
+    </script>
+  </body>
+</html>

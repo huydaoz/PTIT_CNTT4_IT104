@@ -18,7 +18,8 @@ import Product from "./components/PTIT_CNTT4_IT104_Session27_EXERCISE06/Product"
 import Homee from "./components/PTIT_CNTT4_IT104_Session27_EXERCISE07/Homee";
 import Aboutt from "./components/PTIT_CNTT4_IT104_Session27_EXERCISE07/Aboutt";
 import NotFound from "./components/PTIT_CNTT4_IT104_Session27_EXERCISE07/NotFound";
-
+import Login from "./components/PTIT_CNTT4_IT104_Session27_EXERCISE08/Login";
+import Register from "./components/PTIT_CNTT4_IT104_Session27_EXERCISE08/Register";
 export default function App() {
   const routers = [
     {
@@ -104,6 +105,9 @@ export default function App() {
       path: "*",
       element: <NotFound />,
     },
+
+    { path: "/login", element: <Login /> },
+    { path: "/register", element: <Register /> },
   ];
   return (
     <div>

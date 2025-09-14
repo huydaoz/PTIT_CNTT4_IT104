@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function task1(cb) {
+        setTimeout(() => {
+          console.log("Task 1 da duoc thuc thi");
+          cb();
+        }, 1000);
+      }
+
+      function task2(cb) {
+        setTimeout(() => {
+          console.log("Task 2 da duoc thuc thi");
+          cb();
+        }, 1500);
+      }
+      function task3(cb) {
+        setTimeout(() => {
+          console.log("Task 3 da duoc thuc thi ,Hoan thanh!");
+          cb();
+        }, 2000);
+      }
+
+      function run() {
+        task1(() => {
+          task2(() => {
+            task3();
+          });
+        });
+      }
+
+      run();
+    </script>
+  </body>
+</html>
