@@ -1,0 +1,109 @@
+{
+  "product": [
+    {
+      "id": 2,
+      "product_name": "Gà chọi tía",
+      "image": "https://gachoivietnam.vn/wp-content/uploads/2021/12/ga-choi-tia.jpg",
+      "price": 2800000,
+      "quantity": 4,
+      "create_at": "15-03-1975"
+    },
+    {
+      "id": 3,
+      "product_name": "Gà chọi lai",
+      "image": "https://gachoivietnam.vn/wp-content/uploads/2021/12/ga-choi-lai.jpg",
+      "price": 2500000,
+      "quantity": 7,
+      "create_at": "10-07-1985"
+    },
+    {
+      "id": 1,
+      "product_name": "Gà chọi giống",
+      "image": "https://gachoivietnam.vn/wp-content/uploads/2021/12/ga-choi-giong.jpg",
+      "price": 2700000,
+      "quantity": 5,
+      "create_at": "22-08-2000"
+    },
+    {
+      "id": 5,
+      "product_name": "Gà chọi chiến",
+      "image": "https://gachoivietnam.vn/wp-content/uploads/2021/12/ga-choi-chien.jpg",
+      "price": 3500000,
+      "quantity": 2,
+      "create_at": "01-01-2010"
+    },
+    {
+      "id": 4,
+      "product_name": "Gà chọi đòn",
+      "image": "https://gachoivietnam.vn/wp-content/uploads/2021/12/ga-choi-don.jpg",
+      "price": 3200000,
+      "quantity": 3,
+      "create_at": "05-11-1990"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "student_name": "Nguyễn Văn A",
+      "email": "a@example.com",
+      "address": "Hà Nội",
+      "phone": "0123456789",
+      "status": true,
+      "created_at": "2023-01-01"
+    },
+    {
+      "id": 5,
+      "student_name": "Hoàng Văn E",
+      "email": "e@example.com",
+      "address": "Huế",
+      "phone": "0901122334",
+      "status": true,
+      "created_at": "2023-05-20"
+    },
+    {
+      "id": 4,
+      "student_name": "Phạm Thị D",
+      "email": "d@example.com",
+      "address": "Cần Thơ",
+      "phone": "0934567890",
+      "status": false,
+      "created_at": "2023-04-05"
+    },
+    {
+      "id": 3,
+      "student_name": "Lê Văn C",
+      "email": "c@example.com",
+      "address": "TP Hồ Chí Minh",
+      "phone": "0912345678",
+      "status": true,
+      "created_at": "2023-03-10"
+    },
+    {
+      "student_name": "sad",
+      "email": "adsadsad",
+      "address": "áda",
+      "phone": "đâsds",
+      "status": true,
+      "created_at": "2025-09-15",
+      "id": 6
+    },
+    {
+      "student_name": "adsad",
+      "email": "sadsd",
+      "address": "ádasd",
+      "phone": "",
+      "status": true,
+      "created_at": "2025-09-15",
+      "id": 7
+    },
+    {
+      "student_name": "",
+      "email": "sda",
+      "address": "",
+      "phone": "",
+      "status": true,
+      "created_at": "2025-09-15",
+      "id": 8
+    }
+  ]
+}
