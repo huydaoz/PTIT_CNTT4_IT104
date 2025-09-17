@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "title": "5",
+      "image": "",
+      "date": "3/9/2025",
+      "status": true,
+      "content": "5",
+      "id": 8
+    },
+    {
+      "title": "5",
+      "image": "",
+      "date": "17/9/2025",
+      "status": true,
+      "content": "6",
+      "id": 9
+    },
+    {
+      "title": "1",
+      "image": "",
+      "date": "18/9/2025",
+      "status": true,
+      "content": "2",
+      "id": 10
+    }
+  ]
+}
