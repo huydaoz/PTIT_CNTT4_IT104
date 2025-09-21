@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import ListProduct from "./components/ListProduct";
 import ShoppingCart from "./components/ShoppingCart";

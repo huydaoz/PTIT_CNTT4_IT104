@@ -1,79 +1,90 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import type { Product } from "../interface/interface";
 
 export default function ShoppingCart() {
-  const result = useSelector((data: any) => {
-    return data.cart.cart;
-  });
+  const cart = useSelector(
+    (state: {
+      cart: {
+        cart: Product[];
+      };
+    }) => state.cart.cart
+  );
+  const dispatch = useDispatch();
+
+  const increase = (id: number) => {
+    dispatch({ type: "INCREASE", payload: id });
+  };
+
+  const decrease = (id: number) => {
+    dispatch({ type: "DECREASE", payload: id });
+  };
+
+  const remove = (id: number) => {
+    if (confirm("Are you sure to delete this product?")) {
+      dispatch({ type: "DELETE", payload: id });
+      alert("Delete cart successfully");
+    }
+  };
+
+  if (cart.length === 0) {
+    return <p>Empty product in your cart</p>;
+  }
+
   return (
-    <div>
-      <div>
-        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div className="panel panel-danger">
-            <div className="panel-heading">
-              <h1 className="panel-title">Your Cart</h1>
-            </div>
-            <div className="panel-body">
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th>STT</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody id="my-cart-body">
-                  {result.map((item: Product, index: number) => {
-                    return (
-                      <tr>
-                        <th scope="row">{index + 1}</th>
-                        <td>{item.title}</td>
-                        <td>{item.price}</td>
-                        <td>
-                          <button>-</button>
-                          <input
-                            name="cart-item-quantity-1"
-                            type="number"
-                            defaultValue={item.quantity}
-                          />
-                          <button>+</button>
-                        </td>
-                        <td>
-                          <a
-                            className="label label-info update-cart-item"
-                            data-product=""
-                          >
-                            Update
-                          </a>
-                          <a
-                            className="label label-danger delete-cart-item"
-                            data-product=""
-                          >
-                            Delete
-                          </a>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-                <tfoot id="my-cart-footer">
-                  <tr>
-                    <td colSpan={4}>
-                      There are <b>2</b> items in your shopping cart.
-                    </td>
-                    <td colSpan={2} className="total-price text-left">
-                      630 USD
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-          <div className="alert alert-success" role="alert" id="mnotification">
-            Add to cart successfully
-          </div>
+    <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div className="panel panel-danger">
+        <div className="panel-heading">
+          <h1 className="panel-title">Your Cart</h1>
+        </div>
+        <div className="panel-body">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="my-cart-body">
+              {cart.map((item: Product, index: number) => (
+                <tr key={item.id}>
+                  <th scope="row">{index + 1}</th>
+                  <td>{item.title}</td>
+                  <td>{item.price}</td>
+                  <td>
+                    <button onClick={() => decrease(item.id)}>-</button>
+                    <input type="number" value={item.quantity} readOnly />
+                    <button onClick={() => increase(item.id)}>+</button>
+                  </td>
+                  <td>
+                    <button
+                      className="label label-danger"
+                      onClick={() => remove(item.id)}
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+            <tfoot id="my-cart-footer">
+              <tr>
+                <td colSpan={4}>
+                  There are <b>{cart.length}</b> items in your shopping cart.
+                </td>
+                <td colSpan={2} className="total-price text-left">
+                  {cart.reduce(
+                    (total: number, item: Product) =>
+                      total + item.price * item.quantity,
+                    0
+                  )}{" "}
+                  USD
+                </td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </div>
     </div>
