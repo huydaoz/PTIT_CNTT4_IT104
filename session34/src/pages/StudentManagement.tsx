@@ -23,11 +23,10 @@ const StudentManagement = () => {
     setIsFormOpen(false);
   };
 
-  const handleDeleteStudent = (id: string) => {
-    if (studentToEdit && studentToEdit.id === id) {
-      handleCloseForm();
+  const handleDeleteStudent = (id: string | number) => {
+    if (confirm("Bạn có chắc chắn muốn xóa sinh viên này không?")) {
+      dispatch({ type: "DELETE", payload: id });
     }
-    dispatch({ type: 'DELETE', payload: id });
   };
 
   const handleStartEdit = (student: Student) => {
