@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Đào Quang Huy",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Phạm Thu Trang"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
