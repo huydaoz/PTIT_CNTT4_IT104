@@ -28,7 +28,7 @@ const StudentForm: React.FC<Props> = ({
   onSubmit,
 }) => {
   const [name, setName] = useState(initial.name ?? "");
-  const [age, setAge] = useState(initial.age ?? 16);
+  const [age, setAge] = useState(initial.age ?? 0);
   const [grade, setGrade] = useState(initial.grade ?? "");
 
   const [errors, setErrors] = useState({
@@ -39,7 +39,7 @@ const StudentForm: React.FC<Props> = ({
 
   useEffect(() => {
     setName(initial.name ?? "");
-    setAge(initial.age ?? 16);
+    setAge(initial.age ?? 0);
     setGrade(initial.grade ?? "");
     setErrors({ name: "", age: "", grade: "" });
   }, [initial, open]);

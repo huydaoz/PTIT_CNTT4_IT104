@@ -11,7 +11,7 @@ import React from "react";
 
 interface Props {
   search: string;
-  gradeFilter: string; // 'all' or specific grade
+  gradeFilter: string;
   sortBy: "name" | "age";
   sortDir: "asc" | "desc";
 
