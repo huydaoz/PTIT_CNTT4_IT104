@@ -3,18 +3,18 @@
     {
       "id": 1,
       "name": "Huy Đào",
-      "age": 21,
+      "age": 17,
       "grade": "A"
     },
     {
       "id": 2,
-      "name": "John Doe",
-      "age": 22,
+      "name": "Phạm Thu Trang",
+      "age": 20,
       "grade": "B"
     },
     {
       "id": 3,
-      "name": "Jane Smith",
+      "name": "Đào Huyền Trang",
       "age": 20,
       "grade": "A"
     }
