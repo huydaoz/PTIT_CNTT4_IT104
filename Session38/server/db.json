@@ -1,0 +1,33 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Đắc nhân tâm",
+      "author": "Dale Carnegie",
+      "year": 1936,
+      "category": "Self-help"
+    },
+    {
+      "id": 2,
+      "title": "Tôi tài giỏi, bạn cũng thế!",
+      "author": "Adam Khoo",
+      "year": 2007,
+      "category": "Self-help"
+    },
+
+    {
+      "id": 4,
+      "title": "Nhà giả kim",
+      "author": "Paulo Coelho",
+      "year": 1988,
+      "category": "Fiction"
+    },
+    {
+      "id": 5,
+      "title": "Tuổi trẻ đáng giá bao nhiêu",
+      "author": "Rosie Nguyễn",
+      "year": 2017,
+      "category": "Self-help"
+    }
+  ]
+}
