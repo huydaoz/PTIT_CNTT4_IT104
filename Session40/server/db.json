@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Quan "
+    },
+    {
+      "id": "2",
+      "name": "Ao "
+    }
+  ],
+  "product": [
+    {
+      "name": "quan ",
+      "category": "1",
+      "price": 1200000,
+      "image": "https://res.cloudinary.com/dgdtw2vlj/image/upload/v1759247801/a7asvjdyj8hbjzjpltz4.jpg",
+      "status": "active",
+      "id": "1759247803881"
+    },
+    {
+      "id": "1759248457083",
+      "code": "SP1759248457083",
+      "name": "áo",
+      "category": "2",
+      "price": 21000,
+      "image": "https://res.cloudinary.com/dgdtw2vlj/image/upload/v1759248455/xgrrfq1jpp0xwhk5r4aq.jpg",
+      "status": "inactive"
+    }
+  ]
+}
